@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet " href="style.css">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Sambridi Shrestha</span> </h1><br>
+                <a href="images/sambridi cv.pdf" download="cv">
+                    <button class="btn btn-secondary" style="font-size: 14px; background-color: #ff6b6b; color: white; border: none; padding: 10px 20px; cursor: pointer; transition: background-color 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#5a6268';"
+                        onmouseout="this.style.backgroundColor='#6c757d';">
+                        Download CV
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/black.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br> <br>
+                <p>Hello! My name is Sambridi Shrestha, and I am currently pursuing a Bachelor in Computer Application (BCA),
+                     specializing in web development and software engineering. With a keen interest in both client-side and server-side scripting,
+                      I have developed a strong foundation in technologies such as HTML, CSS, JavaScript, and PHP.
+                      My goal is to continuously grow as a software developer, leveraging my skills to create 
+                        innovative and user-friendly applications. I am always eager to learn new technologies and
+                         take on challenging projects.</p><br> <br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span>HTML</span></li>
+                        <li> <span>CSS</span></li>
+                        <li> <span>Javascript</span></li>
+                        <li> <span>PHP</span></li>
+                        <li> <span>MYSQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span>Returns Operational Associate at <b>Daraz</b></li>
+                        <li> Duration: (2nd April 2023) to (21st December 2023) </li> 
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span>Bachelor in Computer Application</span><br><br>At Sagarmatha College of Science and Technology</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Development</h2><br><br>
+                <ul>
+                    <li><span>Custom Web Design</span></li><br>
+                    <li><span>Responsive Web Design</span></li><br>
+                    <li><span>Ecommerce solution</span></li><br>
+                    
+                </ul>
+            </div>
+            <div>
+                <h2>Front-end Development </h2><br><br>
+                <ul>
+                    <li><span>HTML/CSS Development</span></li><br>
+                    <li><span>Javascript Development</span></li><br>
+                    <li><span>User interface Design </span></li><br>
+                    
+                </ul>
+            </div>
+            <div>
+                <h2>Back-end Development </h2><br><br>
+                <ul>
+                    <li><span>PHP Development</span></li><br>
+                    <li><span>Node.js Development</span></li><br>
+                    <li><span>Server-side scripting</span></li><br>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- contact -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fas fa-paper-plane"></i>shresthasambridi771@gmail.com</p>
+            <p> <i class="fas fa-phone-square-alt"></i>9810172164</p>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <!-- <a href="images/sambridi cv.pdf" download="cv">
+            <button class="btn btn-secondary" style="font-size: 14px;">Downlaod CV</button>
+        </a> -->
+        </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn-primary" style="background-color: #ff6b6b; color: #fff; padding: 12px 24px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; transition: background-color 0.3s;">submit</button>
+                </form>
+                <br>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sambridi</p>
+    </div>
+  </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwL6tRsVdBxl_Jpqh6J1xalA6vNTRYBzi8c8l6yOIjWm6nCbyiRo6LMwRH5P0xmbK3m/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML= ""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
